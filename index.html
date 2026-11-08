@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,88 +41,88 @@
             scroll-behavior: smooth;
             scroll-padding-top: 4.5rem;
         }
- 
+
         body {
             background: #0d1016;
         }
- 
+
         .sweep {
             transform-origin: 985px 150px;
             animation: sweep 7s ease-in-out infinite alternate;
         }
- 
+
         @keyframes sweep {
             from {
                 transform: rotate(-9deg);
             }
- 
+
             to {
                 transform: rotate(11deg);
             }
         }
- 
+
         .far {
             animation: drift 55s linear infinite;
         }
- 
+
         .near {
             animation: drift 26s linear infinite;
         }
- 
+
         @keyframes drift {
             to {
                 transform: translateX(-1200px);
             }
         }
- 
+
         .cloud.c1 {
             animation: cloud 40s linear infinite alternate;
         }
- 
+
         .cloud.c2 {
             animation: cloud 60s linear infinite alternate-reverse;
         }
- 
+
         @keyframes cloud {
             from {
                 transform: translateX(-200px);
             }
- 
+
             to {
                 transform: translateX(200px);
             }
         }
- 
+
         .w1 {
             animation: tw 3s ease-in-out infinite;
         }
- 
+
         .w2 {
             animation: tw 5s ease-in-out infinite 2s;
         }
- 
+
         .w3 {
             animation: tw 8s ease-in-out infinite 5s;
         }
- 
+
         @keyframes tw {
- 
+
             0%,
             100% {
                 opacity: 1;
             }
- 
+
             45%,
             55% {
                 opacity: .08;
             }
         }
- 
+
         @media (prefers-reduced-motion: reduce) {
             html {
                 scroll-behavior: auto;
             }
- 
+
             .sweep,
             .far,
             .near,
@@ -133,7 +133,7 @@
                 animation: none;
             }
         }
- 
+
         a:focus-visible,
         button:focus-visible,
         input:focus-visible,
@@ -143,9 +143,9 @@
         }
     </style>
 </head>
- 
+
 <body class="font-body text-slate-200 antialiased">
- 
+
     <!-- HEADER -->
     <header class="sticky top-0 z-50 border-b border-steel bg-night/95 backdrop-blur">
         <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
@@ -175,7 +175,7 @@
             <a class="block py-2 text-fog" href="#contact">Contact</a>
         </nav>
     </header>
- 
+
     <main>
         <!-- La señal sobre la ciudad -->
         <section id="home" class="relative overflow-hidden border-b border-steel">
@@ -235,7 +235,7 @@
                 <p class="mt-4 font-display text-2xl font-semibold tracking-wide text-signal sm:text-3xl">Backend
                     Developer</p>
                 <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
-                    [One sentence about what you build and what you are looking for. Keep it short and honest.]
+                    I like building the part of the web you don't see, and I'm ready for my first real project.
                 </p>
                 <div class="mt-8 flex flex-wrap gap-3">
                     <a href="#projects"
@@ -247,36 +247,41 @@
                 </div>
             </div>
         </section>
- 
+
         <!-- ABOUT -->
         <section id="about" class="mx-auto max-w-6xl px-5 py-20">
             <div class="grid items-center gap-10 md:grid-cols-[280px_1fr]">
- 
-                <img src="https://placehold.co/560x560/161b24/f2c230?text=Your+photo" alt="Portrait of [Your Name]"
+
+                <img src="images/Alan.jfif" alt="Portrait of [Your Name]"
                     class="mx-auto aspect-square w-60 rounded-full border-4 border-steel object-cover md:w-full">
                 <div>
                     <h2 class="font-display text-4xl font-extrabold tracking-wide text-white sm:text-5xl">About me</h2>
                     <p class="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-                        [Who you are, where you are from, and why you got into technology.]
+                        I'm a backend developer from El Salvador, and I like technology because it keeps growing all
+                        over the world.
                     </p>
                     <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-300">
-                        [What you studied in the three years of the program and what you learned from it.]
+                        I have been studying programming for three consecutive years in the ¡Supérate! program. I
+                        learned how to work with AI, how to use different tools, and how to adapt to change.
                     </p>
                     <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-300">
-                        [Your main strengths: for example teamwork, problem solving, design sense, fast learner.]
+                        I work well with different types of people, I enjoy solving problems, and I adapt to any
+                        situation.
+                    </p>
                     </p>
                     <div class="mt-7 flex flex-wrap gap-3 text-sm">
-                        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/4lanhernandez" target="_blank" rel="noopener noreferrer"
                             class="rounded border border-steel bg-asphalt px-4 py-2 hover:border-signal hover:text-signal">GitHub</a>
-                        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.linkedin.com/in/alan-méndez-92a4523b8?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank" rel="noopener noreferrer"
                             class="rounded border border-steel bg-asphalt px-4 py-2 hover:border-signal hover:text-signal">LinkedIn</a>
-                        <a href="mailto:youremail@example.com"
+                        <a href="mailto:4lanmndez@gmail.com"
                             class="rounded border border-steel bg-asphalt px-4 py-2 hover:border-signal hover:text-signal">Email</a>
                     </div>
                 </div>
             </div>
         </section>
- 
+
         <!-- TECH STACK -->
         <section id="stack" class="border-y border-steel bg-asphalt">
             <div class="mx-auto max-w-6xl px-5 py-20">
@@ -318,47 +323,44 @@
                 </div>
             </div>
         </section>
- 
+
         <!-- PROJECTS -->
         <section id="projects" class="mx-auto max-w-6xl px-5 py-20">
             <h2 class="font-display text-4xl font-extrabold tracking-wide text-white sm:text-5xl">Featured projects</h2>
             <p class="mt-3 max-w-xl text-fog">One ¡Supérate! project for each year of the program.</p>
- 
+
             <div class="mt-10 grid gap-6 lg:grid-cols-3">
- 
+
                 <!-- PROYECTO 1  -->
                 <article class="flex flex-col rounded-lg border border-steel bg-asphalt p-6">
                     <p class="text-sm text-signal">Year 1 · 2024</p>
-                    <h3 class="mt-1 font-display text-3xl font-semibold text-white">[Project title]</h3>
-                    <p class="mt-3 text-slate-300">[What the project does and who it helps, in two or three sentences.]
+                    <h3 class="mt-1 font-display text-3xl font-semibold text-white">TravelTour</h3>
+                    <p class="mt-3 text-slate-300">Travel Tour is an app where people can search for hotels and Airbnb stays at a good price, with the location and key details of each place. It was our first-year ¡Supérate! project.
                     </p>
                     <ul class="mt-4 flex flex-wrap gap-2 text-xs">
-                        <li class="rounded-full bg-steel px-3 py-1">[Tech 1]</li>
-                        <li class="rounded-full bg-steel px-3 py-1">[Tech 2]</li>
-                        <li class="rounded-full bg-steel px-3 py-1">[Tech 3]</li>
                     </ul>
                     <h4 class="mt-5 font-semibold text-white">My role and contributions</h4>
                     <p class="mt-1 text-slate-300">[Your role, e.g. Frontend. Then what you personally built or
                         decided.]</p>
                     <div class="mt-auto flex flex-wrap gap-3 pt-6 text-sm">
-                        <a href="https://github.com/your-username/repo" target="_blank" rel="noopener noreferrer"
+                        <a href="https://www.figma.com/proto/20IwZyqln2xsBdBbuj4EZc/Untitled?node-id=186-154"
+                            target="_blank" rel="noopener noreferrer"
                             class="rounded bg-signal px-4 py-2 font-semibold text-night hover:bg-yellow-300">Link</a>
                         <a href="https://your-demo.vercel.app" target="_blank" rel="noopener noreferrer"
                             class="rounded border border-fog/40 px-4 py-2 hover:border-signal hover:text-signal">Live
                             demo</a>
                     </div>
                 </article>
- 
+
                 <!-- PROYECTO 2 -->
                 <article class="flex flex-col rounded-lg border border-steel bg-asphalt p-6">
                     <p class="text-sm text-signal">Year 2 · 2025</p>
-                    <h3 class="mt-1 font-display text-3xl font-semibold text-white">[Project title]</h3>
-                    <p class="mt-3 text-slate-300">[What the project does and who it helps, in two or three sentences.]
+                    <h3 class="mt-1 font-display text-3xl font-semibold text-white">Teach Me Now</h3>
+                    <p class="mt-3 text-slate-300">TeachMeNow is a platform that helps teachers organize their work and
+                        makes it easier for them to get things done.
+                    </p>
                     </p>
                     <ul class="mt-4 flex flex-wrap gap-2 text-xs">
-                        <li class="rounded-full bg-steel px-3 py-1">[Tech 1]</li>
-                        <li class="rounded-full bg-steel px-3 py-1">[Tech 2]</li>
-                        <li class="rounded-full bg-steel px-3 py-1">[Tech 3]</li>
                     </ul>
                     <h4 class="mt-5 font-semibold text-white">My role and contributions</h4>
                     <p class="mt-1 text-slate-300">[Your role, e.g. UI/UX. Then what you personally designed or
@@ -371,17 +373,14 @@
                             guide</a>
                     </div>
                 </article>
- 
+
                 <!-- PROYECTO 3 -->
                 <article class="flex flex-col rounded-lg border border-steel bg-asphalt p-6">
                     <p class="text-sm text-signal">Year 3 · 2026</p>
-                    <h3 class="mt-1 font-display text-3xl font-semibold text-white">[Project title]</h3>
-                    <p class="mt-3 text-slate-300">[What the project does and who it helps, in two or three sentences.]
+                    <h3 class="mt-1 font-display text-3xl font-semibold text-white">Valtrust</h3>
+                    <p class="mt-3 text-slate-300">ValTrust is a real estate app that works as a trusted intermediary for people buying a home. It recognizes the buyer's national ID (DUI), reviews the property deed, and helps with the location of the property. It was our third-year ¡Supérate! project.
                     </p>
                     <ul class="mt-4 flex flex-wrap gap-2 text-xs">
-                        <li class="rounded-full bg-steel px-3 py-1">[Tech 1]</li>
-                        <li class="rounded-full bg-steel px-3 py-1">[Tech 2]</li>
-                        <li class="rounded-full bg-steel px-3 py-1">[Tech 3]</li>
                     </ul>
                     <h4 class="mt-5 font-semibold text-white">My role and contributions</h4>
                     <p class="mt-1 text-slate-300">[Your role, e.g. Lead or Pitch. Then what you personally did.]</p>
@@ -395,7 +394,7 @@
                 </article>
             </div>
         </section>
- 
+
         <!-- CERTIFICATES -->
         <section id="certificates" class="border-y border-steel bg-asphalt">
             <div class="mx-auto max-w-6xl px-5 py-20">
@@ -403,7 +402,7 @@
                     certificates</h2>
                 <p class="mt-3 max-w-xl text-fog">The three required courses of the module, plus extra certificates from
                     the program.</p>
- 
+
                 <div class="mt-10 grid gap-6 md:grid-cols-3">
                     <!-- Imagenes de los diplomas -->
                     <article class="overflow-hidden rounded-lg border border-steel bg-night">
@@ -440,23 +439,23 @@
                         </div>
                     </article>
                 </div>
- 
+
                 <h3 class="mt-14 font-display text-3xl font-semibold text-white">Additional certificates</h3>
                 <ul class="mt-4 divide-y divide-steel rounded-lg border border-steel bg-night">
                     <li class="flex flex-wrap items-center justify-between gap-2 px-5 py-4">
-                        <span>[Extra certificate name] <span class="text-fog">· [Issuer], [Year]</span></span>
-                        <a href="https://example.com/extra-1" target="_blank" rel="noopener noreferrer"
-                            class="text-sm font-semibold text-signal hover:underline">View</a>
+                        <span>Excel Associate <span class="text-fog">· Microsoft, 2025</span></span>
+                        <a href="certificates/Excel Associate.pdf" target="_blank" rel="noopener noreferrer"
+                            class="text-sm font-semibold text-signal hover:underline">View PDF</a>
                     </li>
                     <li class="flex flex-wrap items-center justify-between gap-2 px-5 py-4">
-                        <span>[Extra certificate name] <span class="text-fog">· [Issuer], [Year]</span></span>
-                        <a href="https://example.com/extra-2" target="_blank" rel="noopener noreferrer"
-                            class="text-sm font-semibold text-signal hover:underline">View</a>
+                        <span>Excel Expert <span class="text-fog">· Microsoft, 2026</span></span>
+                        <a href="certificates/Excel-20Expert.pdf" target="_blank" rel="noopener noreferrer"
+                            class="text-sm font-semibold text-signal hover:underline">View PDF</a>
                     </li>
                 </ul>
             </div>
         </section>
- 
+
         <!-- CONTACT -->
         <section id="contact" class="mx-auto max-w-6xl px-5 py-20">
             <div class="grid gap-12 md:grid-cols-2">
@@ -487,7 +486,7 @@
                         </div>
                     </dl>
                 </div>
- 
+
                 <!-- Crea un formulario gratis en formspree.io y pega tu ID en action -->
                 <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
                     class="space-y-5 rounded-lg border border-steel bg-asphalt p-6">
@@ -516,11 +515,11 @@
             </div>
         </section>
     </main>
- 
+
     <footer class="border-t border-steel py-8 text-center text-sm text-fog">
         <p>© 2026 Alan Mendez. <a href="#home" class="text-signal hover:underline">Back to top</a></p>
     </footer>
- 
+
     <script>
             // Genera los edificios del fondo
             (function () {
@@ -570,5 +569,5 @@
         }));
     </script>
 </body>
- 
+
 </html>
